@@ -28,9 +28,32 @@
 (require 'quail)
 
 (quail-define-package
- "pehoeji-experimental" "Hokkien" "P" t
- "(experimental) Peh-oe-ji layout"
- nil t t t t nil nil nil nil nil t)
+ "pehoeji-experimental" ; Name
+ "Hokkien" ; Language
+ "P" ; Title
+ t ; Guidance
+ "(experimental) Peh-oe-ji layout
+
+    effect     postfix
+    ------------------
+    acute         2
+    grave         3
+    circumflex    5
+    breve         6
+    macron        7
+    vertical bar  3
+" ; docstring
+ nil ; TRANSLATION-KEYS
+ t   ; FORGET-LAST-SELECTION
+ nil ; DETERMINISTIC
+ nil ; KBD-TRANSLATE
+ nil ; SHOW-LAYOUT
+ nil ; CREATE-DECODE-MAP
+ nil ; MAXIMUM-SHORTEST
+ nil ; OVERLAY-PLIST
+ nil ; UPDATE-TRANSLATION-FUNCTION
+ nil ; CONVERSION-KEYS
+ t)  ; SIMPLE
 
 (quail-define-rules
  ("a2" ?á)
